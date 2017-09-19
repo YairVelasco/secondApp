@@ -1,3 +1,12 @@
 <p>
   servers works!
 </p>
+<label>SERVER NAME</label>
+<div>
+  <!-- <input type="text" class="form-control" class= "col-sm" (input)="gettingText($event)"> -->
+  <input type="text" class="form-control" class="col-sm" [(ngModel)]="ShowInfo"> 
+  <button [disabled]="!allowServerCreation" class="btn btn-primary" (click)="OnServerConstruction()">Nothing</button>
+  <p>{{ServerConstructionStatus}}</p>
+  <p>{{ShowInfo}}</p>
+  <p>{{inputText}}</p>
+</div>
